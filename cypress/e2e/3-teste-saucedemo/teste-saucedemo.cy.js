@@ -7,7 +7,7 @@ describe('Site Saucedemo.com', () => {
         cy.get('[data-test="password"]').type('password');
         cy.get('[data-test="login-button"]').click();
 
-        cy.get('[data-test="error"]').should('exist');
+        cy.get('[data-test="error"]').should('be.visible');
     })
 
     //Test 2
